@@ -13,5 +13,28 @@ public class TimeFormat {
 		// Does the same with the minutes part of the input.
 		int minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4));
         // Replace this comment with the rest of your code
+
+		//*  public static void main(String[] args) {
+       
+		int hours = Integer.parseInt(args[0]);
+        String s = args[1];
+        int minutes = Integer.parseInt(args[2]);
+        if (hours > 12) {
+            System.out.print(hours - 12 + ":" + minutes + " pm");
+        }
+        if (hours<10) {
+            System.out.print(hours % 10 + ":" + minutes + " am");
+        }
+		public static void main(String[] args) {
+			int hours = Integer.parseInt(args[0]);
+			String s = args[1];
+			int minutes = Integer.parseInt(args[2]);
+			if (hours > 12) {
+				System.out.print(hours - 12 + ":" + minutes + " pm");
+			}
+			if (hours<10) {
+				System.out.print(hours % 10 + ":" + minutes + " am");
+			}
+			   
 	}
 }
